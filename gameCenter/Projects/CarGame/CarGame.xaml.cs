@@ -23,7 +23,9 @@ namespace GameCenter.Projects.CarGame
 
             InitializeComponent();
 
-            backgroundVideo.Source = new Uri("Projects/CarGame/Assets/natureRoad.mp4", UriKind.Relative);
+            string relativePath = "Projects/CarGame/Assets/natureRoad.mp4";
+            string absolutePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, relativePath);
+            backgroundVideo.Source = new Uri(absolutePath);
 
             backgroundVideo.Play();
 

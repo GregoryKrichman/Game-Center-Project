@@ -22,7 +22,7 @@
 
             <Border x:Name="StartScreenOverlay" Background="#FF3A3838"  Visibility="Visible" Opacity="1" />
             <TextBlock x:Name="PressAnyKeyText"
-                   Text="Press any key to start the game" 
+                   Text="Press any key" 
                    FontSize="24" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Center" 
