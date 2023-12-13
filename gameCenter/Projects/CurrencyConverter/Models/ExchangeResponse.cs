@@ -15,4 +15,4 @@ namespace gameCenter.Projects.CurrencyConverter.Models
         public Dictionary<string, double> Rates { get; set; }
     }
 }
-//Rates["USD"]
+//Rates["USD"]k
