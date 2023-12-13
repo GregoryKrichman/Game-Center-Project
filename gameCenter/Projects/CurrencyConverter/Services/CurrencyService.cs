@@ -13,7 +13,7 @@ namespace gameCenter.Projects.CurrencyConverter.Services
     internal class CurrencyService
     {
 
-        private const string BaseApiEndPoint = "http://api.exchangeratesapi.io/latest";
+        private const string BaseApiEndPoint = "http://api.exchangeratesapi.io/v1/latest";
         private string ? ApiKey = Environment.GetEnvironmentVariable("currenciesApiKey");
         private HttpClient Http_Client=new HttpClient(); //בעזרתו אפשר לייצר מטודות כדי לבצע בקשות
         public async Task<Dictionary<string, double>> GetExchangeRatesAsync()
